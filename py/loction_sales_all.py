@@ -96,7 +96,7 @@ def Location_sales(year_sm,year_lg):
     sales.head(10)
     
     # 엑셀 만들기 
-    sales.to_csv("sales_new_"+main_year+".csv", index=False)
+    sales.to_csv("../data/output/sales_new_"+main_year+".csv", index=False)
     
     return sales
 
