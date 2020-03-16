@@ -1,0 +1,38 @@
+{% extends "./main.html" %}
+
+<!-- 상단바 제목 -->
+{% block title %} {{ title }} - 2nd Mini Project {% endblock title %}
+
+<!-- 내용 -->
+{% block contents %}
+
+<h2>{{ title }}</h2>
+
+<article>
+  <h3>날씨 크롤링</h3>
+  <h4>크롤링의 이유</h4>
+    <ul>
+      <li>csv나 api로 주는 정보로는 최신의 정보를 얻을 수 없었다.</li>
+      <li>현재날씨 <a href="https://www.weather.go.kr/w/weather/now.do">( https://www.weather.go.kr/w/weather/now.do )</a> 에서 크롤링이 필요 </li>
+      <li>자바스크립트로 반응하기에 셀레니움으로 작업해야한다.</li>
+    </ul>
+  <h4>기본 기상청 홈페이지</h4>
+  <img src="/static/img/step2/기상청1.png" alt="기상청">
+    <ul>
+      <li>날짜 변경을 해야하는데 옵션보기를 눌러야 변경이 가능해진다.</li>
+    </ul>
+  <h4>옵션 누른 후 기상청 홈페이지</h4>
+  <img src="/static/img/step2/기상청2.png" alt="기상청">
+  <ul>
+    <li>이후 펼쳐지는 창에서 시간탭에 원하는 날짜를 입력해줄 수 있다.</li>
+  </ul>
+  <h4>시간을 입력하고 엔터키 입력</h4>
+  <img src="/static/img/step2/기상청3.png" alt="기상청">
+  <ul>
+    <li>해당 날짜로 바뀌게 된다.</li>
+  </ul>
+  <ul>
+    <li>원하는 날짜를 입력하고 반복시키면 필요한 기간만큼의 데이터를 얻을 수 있다.</li>
+  </ul>
+</article>
+{% endblock contents %}

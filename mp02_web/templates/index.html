@@ -1,0 +1,36 @@
+{% extends "./main.html" %}
+
+<!-- 상단바 제목 -->
+{% block title %}step1 연구목표 설정 - 2nd Mini Project{% endblock title %} {% block head %}
+
+<head>
+    <link rel="stylesheet" href="/static/css/diagram.css">
+    <style>
+    .floating-box {
+        font-size: 1.5em;
+        text-align: center;
+        vertical-align: middle;
+        
+    }
+    </style>
+</head>
+{% endblock head %}
+<!-- 내용 -->
+{% block contents %}
+
+<body>
+    <img src="/static/img/logo.png" alt="logo">
+    <h1>2번째 미니 프로젝트</h1>
+    <div class="floating-box" id="step1" onclick="location.href='{% url 'step1' %}'">연구목표 설정</div>
+    <div class="floating-step"></div>
+    <div class="floating-box" id="step2" onclick="location.href='{% url 'step2' %}'">데이터 획득</div>
+    <div class="floating-step"></div>
+    <div class="floating-box" id="step3" onclick="location.href='{% url 'step3' %}'">데이터 준비</div>
+    <div class="floating-step"></div>
+    <div class="floating-box" id="step4" onclick="location.href='{% url 'step4' %}'">데이터 탐색</div>
+    <div class="floating-step"></div>
+    <div class="floating-box" id="step5" onclick="location.href='{% url 'step5' %}'">데이터 모델링</div>
+    <div class="floating-step"></div>
+    <div class="floating-box" id="step6" onclick="location.href='{% url 'step6' %}'">배포</div>
+
+    {% endblock contents %}
